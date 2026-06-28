@@ -230,9 +230,11 @@ def run_pipeline() -> dict[str, Any]:
 
     state["run_time_seconds"] = round((dt.datetime.now() - start).total_seconds(), 2)
     state["last_run"] = now_iso()
+    append_runtime(f"END run_pipeline status={state['status']} run_time_seconds={state['run_time_seconds']}")
     render_dashboard(state)
     write_state(state)
-    append_runtime(f"END run_pipeline status={state['status']} run_time_seconds={state['run_time_seconds']}")
+    if git_result.get("success"):
+        git_sync(ROOT_DIR, ERROR_LOG, message="v5 auto update: sync status", retries=3)
     return state
 
 
