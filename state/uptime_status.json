@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "last_successful_run": "2026-06-28T10:06:15",
+  "last_heartbeat": "2026-06-28T10:06:14",
+  "issues": [
+    "heartbeat older than 1h"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "job_score": {
+    "salary_score": 0.3,
+    "match_score": 0.3,
+    "growth_score": 0.2,
+    "access_score": 0.2
+  },
+  "side_business_score": {
+    "execution_score": 0.4,
+    "monetization_score": 0.3,
+    "skill_score": 0.3
+  },
+  "learning_policy": {
+    "selection": "largest_capability_gap",
+    "minimum_deliverable": "one 30-60 minute learning artifact"
+  }
+}

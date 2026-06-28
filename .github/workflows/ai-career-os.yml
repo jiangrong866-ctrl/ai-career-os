@@ -1,0 +1,97 @@
+name: AI Career OS
+
+on:
+  schedule:
+    # 20:30 Asia/Shanghai = 12:30 UTC
+    - cron: "30 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  actions: read
+
+concurrency:
+  group: ai-career-os
+  cancel-in-progress: false
+
+jobs:
+  daily-loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GITHUB_TOKEN: ${{ secrets.AI_CAREER_OS_GITHUB_TOKEN || github.token }}
+      GITHUB_REPOSITORY: ${{ vars.AI_CAREER_OS_REPOSITORY || github.repository }}
+      GITHUB_BASE_BRANCH: ${{ vars.AI_CAREER_OS_BASE_BRANCH || 'main' }}
+      DRIVE_RCLONE_REMOTE: ${{ secrets.AI_CAREER_OS_DRIVE_RCLONE_REMOTE }}
+      ALERT_WEBHOOK_URL: ${{ secrets.AI_CAREER_OS_ALERT_WEBHOOK_URL }}
+      AI_CAREER_OS_PRODUCTION: "true"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install rclone when Drive remote is configured
+        if: ${{ env.DRIVE_RCLONE_REMOTE != '' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rclone
+
+      - name: Restore persisted state cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            data
+            reports
+            state
+            queue
+            logs
+          key: ai-career-os-state-${{ github.run_id }}
+          restore-keys: |
+            ai-career-os-state-
+
+      - name: Compile
+        run: |
+          python -m py_compile scripts/daily_loop.py scripts/daemon_loop.py scripts/github_api.py scripts/drive_sync.py scripts/production_readiness.py scripts/healthcheck.py scripts/uptime_monitor.py scripts/alert.py
+
+      - name: Run daily autonomous loop
+        run: |
+          python scripts/daemon_loop.py --once --sleep-seconds 1
+
+      - name: Production readiness
+        run: |
+          python scripts/production_readiness.py
+
+      - name: Healthcheck
+        run: |
+          python scripts/healthcheck.py
+
+      - name: Uptime monitor
+        run: |
+          python scripts/uptime_monitor.py
+
+      - name: Go-live status
+        run: |
+          python scripts/go_live_status.py
+
+      - name: Upload runtime artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-career-os-runtime
+          path: |
+            data/**
+            reports/**
+            state/**
+            queue/**
+            logs/**
+
+      - name: Alert on failure
+        if: failure()
+        run: |
+          python scripts/alert.py || true

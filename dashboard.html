@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Career OS v4 Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; background: #f7f8fa; color: #20242a; }
+    main { max-width: 980px; margin: 0 auto; }
+    h1 { font-size: 28px; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0; }
+    .card { background: #fff; border: 1px solid #d9dee7; border-radius: 8px; padding: 16px; }
+    .ok { color: #0b7a3b; font-weight: 700; }
+    .fail { color: #b42318; font-weight: 700; }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td { border: 1px solid #d9dee7; padding: 10px; text-align: left; }
+    th { background: #eef2f7; }
+    code { background: #eef2f7; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AI Career OS v4 Dashboard</h1>
+  <div class="grid">
+    <section class="card"><strong>Last run</strong><br><span id="last-run">2026-06-28T18:42:05</span></section>
+    <section class="card"><strong>Runtime</strong><br><span>0.28s</span></section>
+    <section class="card"><strong>Pipeline</strong><br><span class="ok">SUCCESS</span></section>
+    <section class="card"><strong>GitHub sync</strong><br><span class="fail">FAIL</span></section>
+  </div>
+  <h2>Modules</h2>
+  <table>
+    <thead><tr><th>Module</th><th>Status</th><th>Detail</th></tr></thead>
+    <tbody id="module-body"><tr><td>daily_report</td><td class='ok'>SUCCESS</td><td>returncode=0; report_exists=True</td></tr>
+<tr><td>learning</td><td class='ok'>SUCCESS</td><td>learning_output_exists=True</td></tr>
+<tr><td>portfolio</td><td class='ok'>SUCCESS</td><td>portfolio_output_exists=True</td></tr>
+<tr><td>side_business</td><td class='ok'>SUCCESS</td><td>side_business_output_exists=True</td></tr></tbody>
+  </table>
+  <p>State file: <code>state.json</code></p>
+</main>
+<script>
+const embeddedState = {"version": "v4", "last_run": "2026-06-28T18:42:05", "run_time_seconds": 0.28, "success": true, "modules": {"daily_report": {"name": "daily_report", "success": true, "detail": "returncode=0; report_exists=True", "outputs": ["D:\\ai-career-os\\reports\\daily_report_2026-06-28.md"], "time": "2026-06-28T18:42:05"}, "learning": {"name": "learning", "success": true, "detail": "learning_output_exists=True", "outputs": ["D:\\ai-career-os\\data\\learning\\learning_2026-06-28_customer_success.md"], "time": "2026-06-28T18:42:05"}, "portfolio": {"name": "portfolio", "success": true, "detail": "portfolio_output_exists=True", "outputs": ["D:\\ai-career-os\\data\\portfolio\\portfolio_update_2026-06-28.md"], "time": "2026-06-28T18:42:05"}, "side_business": {"name": "side_business", "success": true, "detail": "side_business_output_exists=True", "outputs": ["D:\\ai-career-os\\data\\side_business\\service_offer_merchant_support_kb.md"], "time": "2026-06-28T18:42:05"}}, "github_sync": {"name": "github_sync", "success": false, "detail": "git executable not found", "outputs": [], "time": "2026-06-28T18:42:05"}};
+fetch('state.json').then(r => r.ok ? r.json() : embeddedState).then(s => {
+  document.getElementById('last-run').textContent = s.last_run || embeddedState.last_run;
+}).catch(() => {});
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "ok": false,
+  "reason": "DRIVE_SYNC_DIR or DRIVE_RCLONE_REMOTE not configured",
+  "queue_file": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\queue\\drive\\drive_sync_2026-06-28.json",
+  "production_blocking": false
+}

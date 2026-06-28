@@ -1,0 +1,3 @@
+# Fallback cron. Prefer systemd for production.
+*/5 * * * * cd /opt/ai-career-os && /usr/bin/python3 scripts/daemon_loop.py --once >> logs/cron.log 2>> logs/cron_error.log
+

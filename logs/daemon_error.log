@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "D:\.codex专属工作间\ai-career-os\scripts\daemon_loop.py", line 88, in run_daemon
+    github_result = sync_queue()
+  File "D:\.codex专属工作间\ai-career-os\scripts\github_api.py", line 139, in sync_queue
+    repo_meta = get_repo(repo, token)
+  File "D:\.codex专属工作间\ai-career-os\scripts\github_api.py", line 59, in get_repo
+    return github_request("GET", f"/repos/{repo}", token)
+  File "D:\.codex专属工作间\ai-career-os\scripts\github_api.py", line 50, in github_request
+    with urllib.request.urlopen(request, timeout=30) as response:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 489, in open
+    response = self._open(req, data)
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1358, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1399, in _send_request
+    self.putheader(hdr, value)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1331, in putheader
+    values[i] = one_value.encode('latin-1')
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 7-8: ordinal not in range(256)
+

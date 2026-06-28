@@ -1,0 +1,11 @@
+{
+  "ok": false,
+  "reason": "DRIVE_SYNC_DIR or DRIVE_RCLONE_REMOTE not configured",
+  "date": "2026-06-28",
+  "files": [
+    "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\reports\\daily_report_2026-06-28.md",
+    "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\jobs\\jd_cards.jsonl",
+    "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\side_business\\history.jsonl",
+    "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\learning\\growth_track.jsonl"
+  ]
+}

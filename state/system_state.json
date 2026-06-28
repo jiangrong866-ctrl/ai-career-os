@@ -1,0 +1,90 @@
+{
+  "last_run_time": "2026-06-28T18:42:05",
+  "current_stage": "idle",
+  "failure_count": 0,
+  "retry_queue": [],
+  "pending_tasks": [
+    {
+      "time": "2026-06-28T10:06:15",
+      "type": "github_sync",
+      "reason": "GITHUB_TOKEN and GITHUB_REPOSITORY are required"
+    },
+    {
+      "time": "2026-06-28T10:06:15",
+      "type": "drive_sync",
+      "reason": "DRIVE_SYNC_DIR not configured"
+    },
+    {
+      "time": "2026-06-28T11:40:33",
+      "type": "github_sync",
+      "reason": "GITHUB_TOKEN and GITHUB_REPOSITORY are required"
+    },
+    {
+      "time": "2026-06-28T11:40:33",
+      "type": "drive_sync",
+      "reason": "DRIVE_SYNC_DIR or DRIVE_RCLONE_REMOTE not configured"
+    },
+    {
+      "time": "2026-06-28T11:58:38",
+      "type": "github_sync",
+      "reason": "GITHUB_TOKEN and GITHUB_REPOSITORY are required"
+    },
+    {
+      "time": "2026-06-28T12:00:32",
+      "type": "github_sync",
+      "reason": "GITHUB_TOKEN must be an ASCII token value, not placeholder text"
+    },
+    {
+      "time": "2026-06-28T12:01:49",
+      "type": "github_sync",
+      "reason": "GITHUB_TOKEN is still a placeholder; set a real GitHub token"
+    },
+    {
+      "time": "2026-06-28T16:05:03",
+      "type": "github_sync",
+      "reason": "GITHUB_TOKEN and GITHUB_REPOSITORY are required"
+    },
+    {
+      "time": "2026-06-28T16:05:03",
+      "type": "drive_sync",
+      "reason": "DRIVE_SYNC_DIR or DRIVE_RCLONE_REMOTE not configured"
+    },
+    {
+      "time": "2026-06-28T16:06:53",
+      "type": "github_sync",
+      "reason": "GITHUB_TOKEN and GITHUB_REPOSITORY are required"
+    },
+    {
+      "time": "2026-06-28T16:06:53",
+      "type": "drive_sync",
+      "reason": "DRIVE_SYNC_DIR or DRIVE_RCLONE_REMOTE not configured"
+    }
+  ],
+  "last_successful_run": "2026-06-28T18:42:05",
+  "last_verification": {
+    "time": "2026-06-28T18:42:05",
+    "ok": true,
+    "missing": [],
+    "checks": [
+      "input",
+      "analysis",
+      "decision",
+      "execution",
+      "persistence",
+      "verification"
+    ]
+  },
+  "updated_at": "2026-06-28T18:42:05",
+  "last_successful_date": "2026-06-28",
+  "daemon_status": "last_run_ok",
+  "last_github_sync": {
+    "ok": false,
+    "reason": "GITHUB_TOKEN and GITHUB_REPOSITORY are required"
+  },
+  "last_drive_sync": {
+    "ok": false,
+    "reason": "DRIVE_SYNC_DIR or DRIVE_RCLONE_REMOTE not configured",
+    "queue_file": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\queue\\drive\\drive_sync_2026-06-28.json",
+    "production_blocking": false
+  }
+}

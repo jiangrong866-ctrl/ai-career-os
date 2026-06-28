@@ -1,0 +1,65 @@
+{
+  "name": "AI Career Operating System",
+  "version": "2.0.0",
+  "timezone": "Asia/Shanghai",
+  "daily_loop_time": "20:30",
+  "drive": {
+    "root_folder_id": "1Ayb9KHF0g6bwU3OUHHxEgXtLksQztFsF",
+    "root_folder_url": "https://drive.google.com/drive/folders/1Ayb9KHF0g6bwU3OUHHxEgXtLksQztFsF",
+    "ledger_sheet_id": "1TGC1fUZFqv_Nv4I0qhMe8TlAn5HFNICt8t9qYG__FRE",
+    "rules_doc_id": "1frdhFPfHSrEJ4V3H1CPQeYbtDQrtmIS52mD2cjIjtCI"
+  },
+  "trigger": {
+    "primary": "python_daemon_loop",
+    "daemon_script": "scripts/daemon_loop.py",
+    "fallback": "windows_task_scheduler",
+    "fallback_task_name": "AI Career OS Daily Loop",
+    "schedule": "daily 20:30"
+  },
+  "runtime": {
+    "production": "github_actions",
+    "production_runtime_true": true,
+    "dev_fallback": "windows",
+    "supported_supervisors": ["github_actions_cron"],
+    "fallback_supervisors": ["systemd", "docker_restart_policy", "cron_fallback"]
+  },
+  "input_policy": {
+    "priority": ["api", "mcp", "structured_input_queue", "manual_import"],
+    "chrome_mode": "manual_fallback_only",
+    "chrome_is_not_primary_source": true
+  },
+  "decision_engine": {
+    "job_weights": {
+      "salary_score": 0.3,
+      "match_score": 0.3,
+      "growth_score": 0.2,
+      "access_score": 0.2
+    },
+    "side_business_weights": {
+      "execution_score": 0.4,
+      "monetization_score": 0.3,
+      "skill_score": 0.3
+    }
+  },
+  "persistence": {
+    "local_state": "state/system_state.json",
+    "retry_queue": "queue/retry/retry_queue.jsonl",
+    "github_queue": "queue/github",
+    "google_sheets": {
+      "spreadsheet_id": "1TGC1fUZFqv_Nv4I0qhMe8TlAn5HFNICt8t9qYG__FRE",
+      "tabs": ["job_scores", "side_business", "learning_progress"]
+    }
+  },
+  "github_api": {
+    "enabled_when_env_present": true,
+    "required_env": ["GITHUB_TOKEN", "GITHUB_REPOSITORY"],
+    "branch_prefix": "ai-career-os",
+    "mode": "api_or_queue"
+  },
+  "drive_sync": {
+    "mode": "live_sync_required_in_production",
+    "required_env_any": ["DRIVE_SYNC_DIR", "DRIVE_RCLONE_REMOTE"],
+    "queue_dir": "queue/drive",
+    "queue_allowed_only_in_dev": true
+  }
+}

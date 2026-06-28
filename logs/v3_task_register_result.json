@@ -1,0 +1,15 @@
+﻿{
+    "task_name":  "AI Career OS v3",
+    "user":  "LAPTOP-B1LU356B\\1126125669",
+    "is_admin":  true,
+    "deleted_old_task":  true,
+    "created":  true,
+    "run_level_highest":  true,
+    "logon_type":  "S4U",
+    "daily_trigger":  false,
+    "logon_trigger":  false,
+    "action_program":  "C:\\Users\\1126125669\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "action_arguments":  "\"D:\\ai-career-os\\scripts\\run_v3.py\"",
+    "start_in":  "D:\\ai-career-os\\scripts",
+    "error":  null
+}

@@ -1,0 +1,31 @@
+{
+  "categories": {
+    "JD": {
+      "folder": "10_JD_岗位库",
+      "reuse_for": ["resume_targeting", "skill_gap", "interview_script", "portfolio_priority"]
+    },
+    "Resume": {
+      "folder": "20_Resume_简历与面试",
+      "reuse_for": ["job_matching", "email_reply", "interview_story"]
+    },
+    "Project": {
+      "folder": "30_Project_项目与作品集素材",
+      "reuse_for": ["portfolio", "case_study", "github_readme"]
+    },
+    "Script": {
+      "folder": "40_Script_副业内容脚本",
+      "reuse_for": ["xiaohongshu_topic", "douyin_script", "service_offer"]
+    },
+    "Prompt": {
+      "folder": "50_Prompt_提示词与SOP",
+      "reuse_for": ["daily_generation", "workflow_reuse", "agent_sop"]
+    }
+  },
+  "extraction_schema": {
+    "max_key_points": 5,
+    "required_tags": ["employment", "side_business", "portfolio"],
+    "privacy_labels": ["private", "review_before_public", "public_ok"],
+    "source_required": true
+  }
+}
+

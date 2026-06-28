@@ -1,0 +1,4 @@
+{
+  "ok": false,
+  "reason": "GITHUB_TOKEN and GITHUB_REPOSITORY are required"
+}

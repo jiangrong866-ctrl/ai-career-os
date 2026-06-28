@@ -1,0 +1,6 @@
+{
+  "windows_onlogon_task": "not_configured",
+  "reason": "schtasks returned Access is denied for ONLOGON daemon registration",
+  "primary_daemon_command": "cd /d D:\\.codex专属工作间\\ai-career-os && python scripts\\daemon_loop.py",
+  "fallback_daily_task": "AI Career OS Daily Loop"
+}

@@ -1,0 +1,15 @@
+{
+  "github_fully_operational": false,
+  "drive_production_sync": true,
+  "production_runtime": "github_actions",
+  "production_runtime_true": false,
+  "execution_loop_closed": true,
+  "production_readiness": false,
+  "go_live": false,
+  "blocking": [
+    "GitHub token is still placeholder text",
+    "GitHub repository is still placeholder text",
+    "GitHub token/repository/sync not verified",
+    "GitHub Actions runtime not active in this environment"
+  ]
+}

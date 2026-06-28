@@ -1,0 +1,39 @@
+2026-06-28T18:40:15 START run_pipeline
+2026-06-28T18:40:15 START run_daily_report
+2026-06-28T18:40:16 daily_report stdout { |   "ok": true, |   "outputs": { |     "report_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\reports\\daily_report_2026-06-28.md", |     "learning_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\learning\\learning_2026-06-28_customer_success.md", |     "side_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\side_business\\service_offer_merchant_support_kb.md", |     "portfolio_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\portfolio\\portfolio_update_2026-06-28.md" |   }, |   "verification": { |     "time": "2026-06-28T18:40:16", |     "ok": true, |     "missing": [], |     "checks": [ |       "input", |       "analysis", |       "decision", |       "execution", |       "persistence", |       "verification" |     ] |   } | }
+2026-06-28T18:40:16 MODULE SUCCESS daily_report: returncode=0; report_exists=True
+2026-06-28T18:40:16 START run_learning_module
+2026-06-28T18:40:16 MODULE SUCCESS learning: learning_output_exists=True
+2026-06-28T18:40:16 START run_portfolio_update
+2026-06-28T18:40:16 MODULE SUCCESS portfolio: portfolio_output_exists=True
+2026-06-28T18:40:16 START run_side_business_update
+2026-06-28T18:40:16 MODULE SUCCESS side_business: side_business_output_exists=True
+2026-06-28T18:40:16 START github_sync
+2026-06-28T18:40:16 MODULE FAIL github_sync: git executable not found
+2026-06-28T18:40:16 END run_pipeline success=True run_time_seconds=0.37
+2026-06-28T18:41:03 START run_pipeline
+2026-06-28T18:41:03 START run_daily_report
+2026-06-28T18:41:03 daily_report stdout { |   "ok": true, |   "outputs": { |     "report_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\reports\\daily_report_2026-06-28.md", |     "learning_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\learning\\learning_2026-06-28_customer_success.md", |     "side_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\side_business\\service_offer_merchant_support_kb.md", |     "portfolio_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\portfolio\\portfolio_update_2026-06-28.md" |   }, |   "verification": { |     "time": "2026-06-28T18:41:03", |     "ok": true, |     "missing": [], |     "checks": [ |       "input", |       "analysis", |       "decision", |       "execution", |       "persistence", |       "verification" |     ] |   } | }
+2026-06-28T18:41:03 MODULE SUCCESS daily_report: returncode=0; report_exists=True
+2026-06-28T18:41:03 START run_learning_module
+2026-06-28T18:41:03 MODULE SUCCESS learning: learning_output_exists=True
+2026-06-28T18:41:03 START run_portfolio_update
+2026-06-28T18:41:03 MODULE SUCCESS portfolio: portfolio_output_exists=True
+2026-06-28T18:41:03 START run_side_business_update
+2026-06-28T18:41:03 MODULE SUCCESS side_business: side_business_output_exists=True
+2026-06-28T18:41:03 START github_sync
+2026-06-28T18:41:03 MODULE FAIL github_sync: git executable not found
+2026-06-28T18:41:03 END run_pipeline success=True run_time_seconds=0.61
+2026-06-28T18:42:05 START run_pipeline
+2026-06-28T18:42:05 START run_daily_report
+2026-06-28T18:42:05 daily_report stdout { |   "ok": true, |   "outputs": { |     "report_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\reports\\daily_report_2026-06-28.md", |     "learning_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\learning\\learning_2026-06-28_customer_success.md", |     "side_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\side_business\\service_offer_merchant_support_kb.md", |     "portfolio_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\portfolio\\portfolio_update_2026-06-28.md" |   }, |   "verification": { |     "time": "2026-06-28T18:42:05", |     "ok": true, |     "missing": [], |     "checks": [ |       "input", |       "analysis", |       "decision", |       "execution", |       "persistence", |       "verification" |     ] |   } | }
+2026-06-28T18:42:05 MODULE SUCCESS daily_report: returncode=0; report_exists=True
+2026-06-28T18:42:05 START run_learning_module
+2026-06-28T18:42:05 MODULE SUCCESS learning: learning_output_exists=True
+2026-06-28T18:42:05 START run_portfolio_update
+2026-06-28T18:42:05 MODULE SUCCESS portfolio: portfolio_output_exists=True
+2026-06-28T18:42:05 START run_side_business_update
+2026-06-28T18:42:05 MODULE SUCCESS side_business: side_business_output_exists=True
+2026-06-28T18:42:05 START github_sync
+2026-06-28T18:42:05 MODULE FAIL github_sync: git executable not found
+2026-06-28T18:42:05 END run_pipeline success=True run_time_seconds=0.28

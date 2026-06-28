@@ -1,0 +1,15 @@
+[Unit]
+Description=AI Career OS Daemon
+After=network-online.target
+
+[Service]
+WorkingDirectory=/opt/ai-career-os
+ExecStart=/usr/bin/python3 /opt/ai-career-os/scripts/daemon_loop.py
+Restart=always
+RestartSec=30
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=-/opt/ai-career-os/.env
+ReadWritePaths=/opt/ai-career-os
+
+[Install]
+WantedBy=multi-user.target

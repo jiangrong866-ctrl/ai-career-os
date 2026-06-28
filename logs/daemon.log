@@ -1,0 +1,28 @@
+2026-06-27T22:38:50 daemon_started
+2026-06-27T22:38:50 daily_run_start date=2026-06-27
+2026-06-27T22:38:50 daily_run_end ok=True
+2026-06-28T10:06:14 daemon_started
+2026-06-28T10:06:15 daily_run_start date=2026-06-28
+2026-06-28T10:06:15 daily_run_end ok=True
+2026-06-28T11:40:33 daemon_started
+2026-06-28T11:40:33 daily_run_start date=2026-06-28
+2026-06-28T11:40:33 daily_run_end ok=True
+2026-06-28T11:57:18 daemon_started
+2026-06-28T11:57:18 daily_run_start date=2026-06-28
+2026-06-28T11:57:18 daemon_error error=UnicodeEncodeError('latin-1', 'Bearer 你的GitHub fine-grained token', 7, 9, 'ordinal not in range(256)')
+2026-06-28T11:58:38 daemon_started
+2026-06-28T11:58:38 daily_run_start date=2026-06-28
+2026-06-28T11:58:38 daily_run_end ok=True
+2026-06-28T12:00:32 daemon_started
+2026-06-28T12:00:32 daily_run_start date=2026-06-28
+2026-06-28T12:00:32 daily_run_end ok=True
+2026-06-28T12:01:49 daemon_started
+2026-06-28T12:01:49 daily_run_start date=2026-06-28
+2026-06-28T12:01:49 daily_run_end ok=True
+2026-06-28T16:05:03 daemon_started
+2026-06-28T16:05:03 daily_run_start date=2026-06-28
+2026-06-28T16:05:03 daily_run_end ok=True
+2026-06-28T16:06:52 daemon_started
+2026-06-28T16:06:53 daily_run_start date=2026-06-28
+2026-06-28T16:06:53 daily_run_end ok=True
+2026-06-28T16:07:54 daemon_started

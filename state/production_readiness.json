@@ -1,0 +1,18 @@
+{
+  "production_autonomous_capability": false,
+  "checks": {
+    "runtime_is_cloud_or_linux": false,
+    "production_runtime_selected": true,
+    "daemon_script_exists": true,
+    "github_actions_workflow_exists": true,
+    "systemd_unit_exists": true,
+    "cron_fallback_exists": true,
+    "dockerfile_exists": true,
+    "state_file_exists": true,
+    "github_token_present": false,
+    "github_repository_bound": false,
+    "drive_sync_configured": false,
+    "python_syntax_ok": true
+  },
+  "blocking_reason": "missing one or more production requirements"
+}
