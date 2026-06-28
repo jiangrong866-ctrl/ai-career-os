@@ -1,0 +1,17 @@
+﻿{
+    "task_name":  "AI Career OS v5",
+    "old_v3_deleted":  false,
+    "existing_v5_deleted":  true,
+    "created":  true,
+    "execute":  "C:\\Users\\1126125669\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "arguments":  "D:\\ai-career-os\\scripts\\run_v5.py",
+    "start_in":  "D:\\ai-career-os\\scripts",
+    "run_level":  "Highest",
+    "logon_type":  "S4U",
+    "triggers":  [
+                     "MSFT_TaskDailyTrigger",
+                     "MSFT_TaskLogonTrigger"
+                 ],
+    "last_task_result":  267011,
+    "next_run_time":  "\/Date(1782736200000)\/"
+}

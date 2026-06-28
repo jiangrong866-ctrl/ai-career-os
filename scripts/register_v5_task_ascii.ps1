@@ -3,6 +3,7 @@ $ErrorActionPreference = "Stop"
 $TaskName = "AI Career OS v5"
 $OldTaskName = "AI Career OS v3"
 $Root = "D:\ai-career-os"
+$StartIn = "D:\ai-career-os\scripts"
 $Python = "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\python.exe"
 $Script = "D:\ai-career-os\scripts\run_v5.py"
 $ResultPath = "D:\ai-career-os\logs\v5_task_register_result.json"
@@ -24,7 +25,7 @@ if ($existing) {
     $deletedExisting = $true
 }
 
-$action = New-ScheduledTaskAction -Execute $Python -Argument $Script -WorkingDirectory $Root
+$action = New-ScheduledTaskAction -Execute $Python -Argument $Script -WorkingDirectory $StartIn
 $dailyTrigger = New-ScheduledTaskTrigger -Daily -At "20:30"
 $logonTrigger = New-ScheduledTaskTrigger -AtLogOn
 $settings = New-ScheduledTaskSettingsSet `
@@ -48,7 +49,7 @@ $summary = [ordered]@{
     created = $true
     execute = $Python
     arguments = $Script
-    start_in = $Root
+    start_in = $StartIn
     run_level = $registered.Principal.RunLevel.ToString()
     logon_type = $registered.Principal.LogonType.ToString()
     triggers = @($registered.Triggers | ForEach-Object { $_.ToString() })
