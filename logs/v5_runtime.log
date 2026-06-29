@@ -108,3 +108,13 @@
 2026-06-29T11:17:05 START side_business_module
 2026-06-29T11:17:05 MODULE SUCCESS side_business_update: side_business_output_exists=True
 2026-06-29T11:17:15 END run_pipeline status=success run_time_seconds=10.79
+2026-06-29T20:49:10 START run_pipeline version=v5
+2026-06-29T20:49:10 START daily_report
+2026-06-29T20:49:12 daily_report stdout { |   "ok": true, |   "outputs": { |     "report_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\reports\\daily_report_2026-06-29.md", |     "learning_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\learning\\learning_2026-06-29_customer_success.md", |     "side_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\side_business\\service_offer_merchant_support_kb.md", |     "portfolio_path": "D:\\.codex\u4e13\u5c5e\u5de5\u4f5c\u95f4\\ai-career-os\\data\\portfolio\\portfolio_update_2026-06-29.md" |   }, |   "verification": { |     "time": "2026-06-29T20:49:12", |     "ok": true, |     "missing": [], |     "checks": [ |       "input", |       "analysis", |       "decision", |       "execution", |       "persistence", |       "verification" |     ] |   } | }
+2026-06-29T20:49:12 MODULE SUCCESS daily_report: returncode=0; report_exists=True
+2026-06-29T20:49:12 START learning_module
+2026-06-29T20:49:12 MODULE SUCCESS learning_report: learning_output_exists=True
+2026-06-29T20:49:12 START portfolio_module
+2026-06-29T20:49:12 MODULE SUCCESS portfolio_update: portfolio_output_exists=True
+2026-06-29T20:49:12 START side_business_module
+2026-06-29T20:49:12 MODULE SUCCESS side_business_update: side_business_output_exists=True
