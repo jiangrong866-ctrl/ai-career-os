@@ -1,6 +1,6 @@
 {
   "version": "v5",
-  "last_run": "2026-07-02T10:03:46",
+  "last_run": "2026-07-02T14:29:39",
   "status": "success",
   "previous_status": "degraded",
   "modules": {
@@ -12,8 +12,8 @@
       "outputs": [
         "D:\\ai-career-os\\reports\\daily_report_2026-07-02.md"
       ],
-      "time": "2026-07-02T10:03:48",
-      "run_time_seconds": 1.68
+      "time": "2026-07-02T14:29:40",
+      "run_time_seconds": 0.71
     },
     "learning_report": {
       "module": "learning_report",
@@ -23,8 +23,8 @@
       "outputs": [
         "D:\\ai-career-os\\data\\learning\\learning_2026-07-02_customer_success.md"
       ],
-      "time": "2026-07-02T10:03:48",
-      "run_time_seconds": 0.06
+      "time": "2026-07-02T14:29:40",
+      "run_time_seconds": 0.0
     },
     "portfolio_update": {
       "module": "portfolio_update",
@@ -34,8 +34,8 @@
       "outputs": [
         "D:\\ai-career-os\\data\\portfolio\\portfolio_update_2026-07-02.md"
       ],
-      "time": "2026-07-02T10:03:48",
-      "run_time_seconds": 0.02
+      "time": "2026-07-02T14:29:40",
+      "run_time_seconds": 0.03
     },
     "side_business_update": {
       "module": "side_business_update",
@@ -45,8 +45,8 @@
       "outputs": [
         "D:\\ai-career-os\\data\\side_business\\service_offer_merchant_support_kb.md"
       ],
-      "time": "2026-07-02T10:03:49",
-      "run_time_seconds": 0.1
+      "time": "2026-07-02T14:29:40",
+      "run_time_seconds": 0.0
     }
   },
   "git_sync": {
