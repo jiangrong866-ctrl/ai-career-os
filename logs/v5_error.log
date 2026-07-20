@@ -48,3 +48,29 @@
 2026-07-18T15:04:05 module=git_push attempt=1 error={'command': ['C:\\Users\\1126125669\\.workbuddy\\vendor\\PortableGit\\cmd\\git.exe', 'push', 'origin', 'main'], 'returncode': 128, 'stdout': '', 'stderr': "fatal: unable to access 'https://github.com/jiangrong866-ctrl/ai-career-os.git/': Failed to connect to github.com port 443 after 21106 ms: Could not connect to server", 'ok': False, 'attempt': 1}
 2026-07-18T15:04:34 module=git_push attempt=2 error={'command': ['C:\\Users\\1126125669\\.workbuddy\\vendor\\PortableGit\\cmd\\git.exe', 'push', 'origin', 'main'], 'returncode': 128, 'stdout': '', 'stderr': "fatal: unable to access 'https://github.com/jiangrong866-ctrl/ai-career-os.git/': Failed to connect to github.com port 443 after 21092 ms: Could not connect to server", 'ok': False, 'attempt': 2}
 2026-07-18T15:05:12 module=git_push attempt=3 error={'command': ['C:\\Users\\1126125669\\.workbuddy\\vendor\\PortableGit\\cmd\\git.exe', 'push', 'origin', 'main'], 'returncode': 128, 'stdout': '', 'stderr': "fatal: unable to access 'https://github.com/jiangrong866-ctrl/ai-career-os.git/': Failed to connect to github.com port 443 after 32100 ms: Could not connect to server", 'ok': False, 'attempt': 3}
+2026-07-20T08:35:31 module=pipeline error=TimeoutExpired(['C:\\Users\\1126125669\\.workbuddy\\vendor\\PortableGit\\cmd\\git.exe', 'commit', '-m', 'v5 auto update: daily cycle'], -1221.5249361000024)
+Traceback (most recent call last):
+  File "D:\ai-career-os\scripts\run_v5.py", line 243, in main
+    state = run_pipeline()
+  File "D:\ai-career-os\scripts\run_v5.py", line 226, in run_pipeline
+    git_result = git_sync(ROOT_DIR, ERROR_LOG, message="v5 auto update: daily cycle", retries=3)
+  File "D:\ai-career-os\scripts\auto_git.py", line 64, in git_sync
+    commit_result = run_command([str(git_exe), "commit", "-m", message], repo_root)
+  File "D:\ai-career-os\scripts\auto_git.py", line 22, in run_command
+    result = subprocess.run(
+        command,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1241, in communicate
+    sts = self.wait(timeout=self._remaining_time(endtime))
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1280, in wait
+    return self._wait(timeout=timeout)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1126125669\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1609, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['C:\\Users\\1126125669\\.workbuddy\\vendor\\PortableGit\\cmd\\git.exe', 'commit', '-m', 'v5 auto update: daily cycle']' timed out after 300 seconds
+
