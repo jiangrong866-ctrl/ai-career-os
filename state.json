@@ -1,8 +1,8 @@
 {
   "version": "v5",
-  "last_run": "2026-07-20T12:07:21",
+  "last_run": "2026-07-21T08:34:48",
   "status": "success",
-  "previous_status": "success",
+  "previous_status": "degraded",
   "modules": {
     "daily_report": {
       "module": "daily_report",
@@ -10,10 +10,10 @@
       "status": "success",
       "detail": "returncode=0; report_exists=True",
       "outputs": [
-        "D:\\ai-career-os\\reports\\daily_report_2026-07-20.md"
+        "D:\\ai-career-os\\reports\\daily_report_2026-07-21.md"
       ],
-      "time": "2026-07-20T12:07:22",
-      "run_time_seconds": 1.06
+      "time": "2026-07-21T08:34:50",
+      "run_time_seconds": 1.88
     },
     "learning_report": {
       "module": "learning_report",
@@ -21,10 +21,10 @@
       "status": "success",
       "detail": "learning_output_exists=True",
       "outputs": [
-        "D:\\ai-career-os\\data\\learning\\learning_2026-07-20_customer_success.md"
+        "D:\\ai-career-os\\data\\learning\\learning_2026-07-21_customer_success.md"
       ],
-      "time": "2026-07-20T12:07:22",
-      "run_time_seconds": 0.0
+      "time": "2026-07-21T08:34:50",
+      "run_time_seconds": 0.01
     },
     "portfolio_update": {
       "module": "portfolio_update",
@@ -32,9 +32,9 @@
       "status": "success",
       "detail": "portfolio_output_exists=True",
       "outputs": [
-        "D:\\ai-career-os\\data\\portfolio\\portfolio_update_2026-07-20.md"
+        "D:\\ai-career-os\\data\\portfolio\\portfolio_update_2026-07-21.md"
       ],
-      "time": "2026-07-20T12:07:22",
+      "time": "2026-07-21T08:34:50",
       "run_time_seconds": 0.0
     },
     "side_business_update": {
@@ -45,8 +45,8 @@
       "outputs": [
         "D:\\ai-career-os\\data\\side_business\\service_offer_merchant_support_kb.md"
       ],
-      "time": "2026-07-20T12:07:22",
-      "run_time_seconds": 0.0
+      "time": "2026-07-21T08:34:50",
+      "run_time_seconds": 0.01
     }
   },
   "git_sync": {
@@ -63,6 +63,6 @@
     "arguments": "D:\\ai-career-os\\scripts\\run_v5.py",
     "start_in": "D:\\ai-career-os",
     "cmd_entry": "D:\\ai-career-os\\run_v5.cmd",
-    "next_run": "2026-07-20T20:30:00"
+    "next_run": "2026-07-21T20:30:00"
   }
 }
