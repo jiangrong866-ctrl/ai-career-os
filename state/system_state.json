@@ -1,5 +1,5 @@
 {
-  "last_run_time": "2026-07-30T21:04:44",
+  "last_run_time": "2026-07-31T08:35:35",
   "current_stage": "idle",
   "failure_count": 0,
   "retry_queue": [],
@@ -60,9 +60,9 @@
       "reason": "DRIVE_SYNC_DIR or DRIVE_RCLONE_REMOTE not configured"
     }
   ],
-  "last_successful_run": "2026-07-30T21:04:44",
+  "last_successful_run": "2026-07-31T08:35:37",
   "last_verification": {
-    "time": "2026-07-30T21:04:44",
+    "time": "2026-07-31T08:35:37",
     "ok": true,
     "missing": [],
     "checks": [
@@ -74,7 +74,7 @@
       "verification"
     ]
   },
-  "updated_at": "2026-07-30T21:04:44",
+  "updated_at": "2026-07-31T08:35:37",
   "last_successful_date": "2026-06-28",
   "daemon_status": "last_run_ok",
   "last_github_sync": {
