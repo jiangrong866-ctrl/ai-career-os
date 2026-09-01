@@ -1,4 +1,4 @@
-# Side-Business Deliverable - 2026-08-31
+# Side-Business Deliverable - 2026-09-01
 
 Task: Service offer: merchant customer-service knowledge base
 
