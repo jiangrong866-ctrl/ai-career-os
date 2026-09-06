@@ -2260,3 +2260,4 @@
 2026-09-06T09:52:28 MODULE SUCCESS portfolio_update: portfolio_output_exists=True
 2026-09-06T09:52:28 START side_business_module
 2026-09-06T09:52:28 MODULE SUCCESS side_business_update: side_business_output_exists=True
+2026-09-06T09:52:45 END run_pipeline status=success run_time_seconds=18.72
