@@ -1,6 +1,6 @@
 {
   "version": "v5",
-  "last_run": "2026-09-21T14:03:02",
+  "last_run": "2026-09-22T07:33:05",
   "status": "success",
   "previous_status": "degraded",
   "modules": {
@@ -10,10 +10,10 @@
       "status": "success",
       "detail": "returncode=0; report_exists=True",
       "outputs": [
-        "D:\\ai-career-os\\reports\\daily_report_2026-09-21.md"
+        "D:\\ai-career-os\\reports\\daily_report_2026-09-22.md"
       ],
-      "time": "2026-09-21T14:03:04",
-      "run_time_seconds": 1.5
+      "time": "2026-09-22T07:33:10",
+      "run_time_seconds": 4.76
     },
     "learning_report": {
       "module": "learning_report",
@@ -21,9 +21,9 @@
       "status": "success",
       "detail": "learning_output_exists=True",
       "outputs": [
-        "D:\\ai-career-os\\data\\learning\\learning_2026-09-21_customer_success.md"
+        "D:\\ai-career-os\\data\\learning\\learning_2026-09-22_customer_success.md"
       ],
-      "time": "2026-09-21T14:03:04",
+      "time": "2026-09-22T07:33:10",
       "run_time_seconds": 0.01
     },
     "portfolio_update": {
@@ -32,10 +32,10 @@
       "status": "success",
       "detail": "portfolio_output_exists=True",
       "outputs": [
-        "D:\\ai-career-os\\data\\portfolio\\portfolio_update_2026-09-21.md"
+        "D:\\ai-career-os\\data\\portfolio\\portfolio_update_2026-09-22.md"
       ],
-      "time": "2026-09-21T14:03:04",
-      "run_time_seconds": 0.01
+      "time": "2026-09-22T07:33:11",
+      "run_time_seconds": 0.05
     },
     "side_business_update": {
       "module": "side_business_update",
@@ -45,8 +45,8 @@
       "outputs": [
         "D:\\ai-career-os\\data\\side_business\\service_offer_merchant_support_kb.md"
       ],
-      "time": "2026-09-21T14:03:04",
-      "run_time_seconds": 0.01
+      "time": "2026-09-22T07:33:11",
+      "run_time_seconds": 0.02
     }
   },
   "git_sync": {
@@ -63,6 +63,6 @@
     "arguments": "D:\\ai-career-os\\scripts\\run_v5.py",
     "start_in": "D:\\ai-career-os",
     "cmd_entry": "D:\\ai-career-os\\run_v5.cmd",
-    "next_run": "2026-09-21T20:30:00"
+    "next_run": "2026-09-22T20:30:00"
   }
 }
